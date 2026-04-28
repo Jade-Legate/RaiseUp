@@ -109,5 +109,3 @@ open RaiseUp.xcodeproj
 ---
 
 ## 라이선스
-
-MIT
