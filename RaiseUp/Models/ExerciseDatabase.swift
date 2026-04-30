@@ -137,7 +137,7 @@ struct ExerciseDatabase {
     // MARK: - bodyPart 기준 그룹핑 (피커용)
 
     static var groupedByBodyPart: [(part: String, exercises: [ExerciseInfo])] {
-        let order = ["하체", "가슴", "등", "어깨", "팔", "코어", "기타"]
+        let order = ["하체", "가슴", "등", "어깨", "팔", "코어", "전신", "기타"]
         let dict  = Dictionary(grouping: allExercises) { $0.bodyPart }
         return order.compactMap { part in
             guard let list = dict[part], !list.isEmpty else { return nil }

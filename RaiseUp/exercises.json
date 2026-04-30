@@ -1,7 +1,7 @@
 [
   {
     "name": "스쿼트",
-    "aliases": ["squat"],
+    "aliases": ["squat", "바벨스쿼트"],
     "bodyPart": "하체",
     "bodyPartRegion": "하체 전면",
     "primaryMuscles": ["대퇴사두"],
@@ -22,15 +22,26 @@
     "alternatives": ["스쿼트", "런지", "불가리안스플릿스쿼트"]
   },
   {
-    "name": "레그컬",
-    "aliases": ["leg curl"],
+    "name": "해크스쿼트",
+    "aliases": ["hack squat"],
     "bodyPart": "하체",
-    "bodyPartRegion": "하체 후면",
-    "primaryMuscles": ["햄스트링"],
-    "secondaryMuscles": [],
+    "bodyPartRegion": "하체 전면",
+    "primaryMuscles": ["대퇴사두"],
+    "secondaryMuscles": ["둔근", "햄스트링"],
     "equipment": "기구",
-    "mechanic": "isolation",
-    "alternatives": ["루마니안데드리프트", "힙쓰러스트"]
+    "mechanic": "compound",
+    "alternatives": ["스쿼트", "레그프레스", "런지"]
+  },
+  {
+    "name": "스미스머신스쿼트",
+    "aliases": ["스미스스쿼트", "smith squat"],
+    "bodyPart": "하체",
+    "bodyPartRegion": "하체 전면",
+    "primaryMuscles": ["대퇴사두"],
+    "secondaryMuscles": ["둔근", "햄스트링"],
+    "equipment": "스미스머신",
+    "mechanic": "compound",
+    "alternatives": ["스쿼트", "레그프레스", "해크스쿼트"]
   },
   {
     "name": "레그익스텐션",
@@ -44,15 +55,92 @@
     "alternatives": ["스쿼트", "런지", "레그프레스"]
   },
   {
+    "name": "런지",
+    "aliases": ["lunge"],
+    "bodyPart": "하체",
+    "bodyPartRegion": "하체 전면",
+    "primaryMuscles": ["대퇴사두"],
+    "secondaryMuscles": ["둔근", "햄스트링"],
+    "equipment": "맨몸",
+    "mechanic": "compound",
+    "alternatives": ["스쿼트", "불가리안스플릿스쿼트", "레그프레스"]
+  },
+  {
+    "name": "워킹런지",
+    "aliases": ["walking lunge"],
+    "bodyPart": "하체",
+    "bodyPartRegion": "하체 전면",
+    "primaryMuscles": ["대퇴사두"],
+    "secondaryMuscles": ["둔근", "햄스트링"],
+    "equipment": "맨몸",
+    "mechanic": "compound",
+    "alternatives": ["런지", "불가리안스플릿스쿼트", "스쿼트"]
+  },
+  {
+    "name": "덤벨런지",
+    "aliases": ["dumbbell lunge"],
+    "bodyPart": "하체",
+    "bodyPartRegion": "하체 전면",
+    "primaryMuscles": ["대퇴사두"],
+    "secondaryMuscles": ["둔근", "햄스트링"],
+    "equipment": "덤벨",
+    "mechanic": "compound",
+    "alternatives": ["런지", "워킹런지", "불가리안스플릿스쿼트"]
+  },
+  {
+    "name": "불가리안스플릿스쿼트",
+    "aliases": ["불가리안", "BSS", "스플릿스쿼트"],
+    "bodyPart": "하체",
+    "bodyPartRegion": "하체 전면",
+    "primaryMuscles": ["대퇴사두"],
+    "secondaryMuscles": ["둔근", "햄스트링"],
+    "equipment": "맨몸",
+    "mechanic": "compound",
+    "alternatives": ["런지", "스쿼트", "레그프레스"]
+  },
+  {
+    "name": "레그컬",
+    "aliases": ["leg curl"],
+    "bodyPart": "하체",
+    "bodyPartRegion": "하체 후면",
+    "primaryMuscles": ["햄스트링"],
+    "secondaryMuscles": [],
+    "equipment": "기구",
+    "mechanic": "isolation",
+    "alternatives": ["루마니안데드리프트", "힙쓰러스트", "시티드레그컬"]
+  },
+  {
+    "name": "시티드레그컬",
+    "aliases": ["seated leg curl"],
+    "bodyPart": "하체",
+    "bodyPartRegion": "하체 후면",
+    "primaryMuscles": ["햄스트링"],
+    "secondaryMuscles": [],
+    "equipment": "기구",
+    "mechanic": "isolation",
+    "alternatives": ["레그컬", "루마니안데드리프트", "힙쓰러스트"]
+  },
+  {
     "name": "힙쓰러스트",
-    "aliases": ["hip thrust", "힙드러스트"],
+    "aliases": ["hip thrust", "힙드러스트", "힙쓰러"],
     "bodyPart": "하체",
     "bodyPartRegion": "하체 후면",
     "primaryMuscles": ["둔근"],
     "secondaryMuscles": ["햄스트링"],
     "equipment": "바벨",
     "mechanic": "isolation",
-    "alternatives": ["루마니안데드리프트", "레그컬"]
+    "alternatives": ["루마니안데드리프트", "레그컬", "글루트브릿지"]
+  },
+  {
+    "name": "글루트브릿지",
+    "aliases": ["glute bridge", "힙브릿지"],
+    "bodyPart": "하체",
+    "bodyPartRegion": "하체 후면",
+    "primaryMuscles": ["둔근"],
+    "secondaryMuscles": ["햄스트링"],
+    "equipment": "맨몸",
+    "mechanic": "isolation",
+    "alternatives": ["힙쓰러스트", "루마니안데드리프트", "레그컬"]
   },
   {
     "name": "루마니안데드리프트",
@@ -66,39 +154,6 @@
     "alternatives": ["레그컬", "힙쓰러스트", "런지"]
   },
   {
-    "name": "데드리프트",
-    "aliases": ["deadlift"],
-    "bodyPart": "등",
-    "bodyPartRegion": null,
-    "primaryMuscles": ["허리 하부"],
-    "secondaryMuscles": ["둔근", "햄스트링", "광배근", "등 중부", "대퇴사두", "승모근", "전완"],
-    "equipment": "바벨",
-    "mechanic": "compound",
-    "alternatives": ["루마니안데드리프트", "레그컬", "힙쓰러스트"]
-  },
-  {
-    "name": "런지",
-    "aliases": ["lunge"],
-    "bodyPart": "하체",
-    "bodyPartRegion": "하체 전면",
-    "primaryMuscles": ["대퇴사두"],
-    "secondaryMuscles": ["둔근", "햄스트링"],
-    "equipment": "맨몸",
-    "mechanic": "compound",
-    "alternatives": ["스쿼트", "불가리안스플릿스쿼트", "레그프레스"]
-  },
-  {
-    "name": "불가리안스플릿스쿼트",
-    "aliases": ["불가리안", "BSS"],
-    "bodyPart": "하체",
-    "bodyPartRegion": "하체 전면",
-    "primaryMuscles": ["대퇴사두"],
-    "secondaryMuscles": ["둔근", "햄스트링"],
-    "equipment": "맨몸",
-    "mechanic": "compound",
-    "alternatives": ["런지", "스쿼트", "레그프레스"]
-  },
-  {
     "name": "카프레이즈",
     "aliases": ["calf raise"],
     "bodyPart": "하체",
@@ -107,73 +162,95 @@
     "secondaryMuscles": [],
     "equipment": "맨몸",
     "mechanic": "isolation",
-    "alternatives": []
+    "alternatives": ["시티드카프레이즈"]
   },
   {
-    "name": "벤치프레스",
-    "aliases": ["bench press", "벤치"],
-    "bodyPart": "가슴",
-    "bodyPartRegion": null,
-    "primaryMuscles": ["가슴"],
-    "secondaryMuscles": ["삼두", "어깨"],
-    "equipment": "바벨",
-    "mechanic": "compound",
-    "alternatives": ["덤벨플라이", "딥스", "케이블크로스오버"]
-  },
-  {
-    "name": "인클라인벤치프레스",
-    "aliases": ["인클라인벤치", "인클라인"],
-    "bodyPart": "가슴",
-    "bodyPartRegion": null,
-    "primaryMuscles": ["가슴 상부"],
-    "secondaryMuscles": ["삼두", "어깨"],
-    "equipment": "바벨",
-    "mechanic": "compound",
-    "alternatives": ["덤벨플라이", "케이블크로스오버", "딥스"]
-  },
-  {
-    "name": "덤벨플라이",
-    "aliases": ["dumbbell fly", "플라이"],
-    "bodyPart": "가슴",
-    "bodyPartRegion": null,
-    "primaryMuscles": ["가슴"],
-    "secondaryMuscles": ["어깨"],
-    "equipment": "덤벨",
+    "name": "시티드카프레이즈",
+    "aliases": ["seated calf raise"],
+    "bodyPart": "하체",
+    "bodyPartRegion": "하체 전면",
+    "primaryMuscles": ["가자미근"],
+    "secondaryMuscles": ["종아리"],
+    "equipment": "기구",
     "mechanic": "isolation",
-    "alternatives": ["벤치프레스", "케이블크로스오버"]
+    "alternatives": ["카프레이즈"]
   },
   {
-    "name": "케이블크로스오버",
-    "aliases": ["케이블크로스", "크로스오버"],
-    "bodyPart": "가슴",
-    "bodyPartRegion": null,
-    "primaryMuscles": ["가슴"],
-    "secondaryMuscles": ["어깨"],
+    "name": "굿모닝",
+    "aliases": ["good morning"],
+    "bodyPart": "하체",
+    "bodyPartRegion": "하체 후면",
+    "primaryMuscles": ["햄스트링"],
+    "secondaryMuscles": ["둔근", "허리 하부"],
+    "equipment": "바벨",
+    "mechanic": "compound",
+    "alternatives": ["루마니안데드리프트", "레그컬", "힙쓰러스트"]
+  },
+  {
+    "name": "케이블킥백",
+    "aliases": ["cable kickback", "킥백", "글루트킥백"],
+    "bodyPart": "하체",
+    "bodyPartRegion": "하체 후면",
+    "primaryMuscles": ["둔근"],
+    "secondaryMuscles": ["햄스트링"],
     "equipment": "케이블",
     "mechanic": "isolation",
-    "alternatives": ["덤벨플라이", "딥스", "벤치프레스"]
+    "alternatives": ["힙쓰러스트", "글루트브릿지", "루마니안데드리프트"]
   },
   {
-    "name": "딥스",
-    "aliases": ["dips"],
-    "bodyPart": "가슴",
+    "name": "힙어브덕션",
+    "aliases": ["hip abduction", "어브덕션"],
+    "bodyPart": "하체",
+    "bodyPartRegion": "하체 후면",
+    "primaryMuscles": ["둔근 중부"],
+    "secondaryMuscles": ["둔근"],
+    "equipment": "기구",
+    "mechanic": "isolation",
+    "alternatives": ["힙어덕션", "케이블킥백", "글루트브릿지"]
+  },
+  {
+    "name": "힙어덕션",
+    "aliases": ["hip adduction", "어덕션"],
+    "bodyPart": "하체",
+    "bodyPartRegion": "하체 전면",
+    "primaryMuscles": ["내전근"],
+    "secondaryMuscles": [],
+    "equipment": "기구",
+    "mechanic": "isolation",
+    "alternatives": ["힙어브덕션", "스쿼트"]
+  },
+  {
+    "name": "데드리프트",
+    "aliases": ["deadlift", "데드"],
+    "bodyPart": "등",
     "bodyPartRegion": null,
-    "primaryMuscles": ["가슴"],
-    "secondaryMuscles": ["삼두", "어깨"],
-    "equipment": "맨몸",
+    "primaryMuscles": ["허리 하부"],
+    "secondaryMuscles": ["둔근", "햄스트링", "광배근", "등 중부", "대퇴사두", "승모근", "전완"],
+    "equipment": "바벨",
     "mechanic": "compound",
-    "alternatives": ["케이블푸시다운", "벤치프레스", "트라이셉스익스텐션"]
+    "alternatives": ["루마니안데드리프트", "바벨로우", "랫풀다운"]
   },
   {
     "name": "풀업",
-    "aliases": ["pull up", "턱걸이"],
+    "aliases": ["pull up", "턱걸이", "풀업"],
     "bodyPart": "등",
     "bodyPartRegion": null,
     "primaryMuscles": ["광배근"],
     "secondaryMuscles": ["이두", "등 중부"],
     "equipment": "맨몸",
     "mechanic": "compound",
-    "alternatives": ["랫풀다운", "시티드로우", "원암덤벨로우"]
+    "alternatives": ["랫풀다운", "어시스티드풀업", "시티드로우"]
+  },
+  {
+    "name": "어시스티드풀업",
+    "aliases": ["assisted pull up", "어시스트풀업"],
+    "bodyPart": "등",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["광배근"],
+    "secondaryMuscles": ["이두", "등 중부"],
+    "equipment": "기구",
+    "mechanic": "compound",
+    "alternatives": ["풀업", "랫풀다운", "시티드로우"]
   },
   {
     "name": "랫풀다운",
@@ -187,37 +264,48 @@
     "alternatives": ["풀업", "시티드로우", "원암덤벨로우"]
   },
   {
+    "name": "클로즈그립랫풀다운",
+    "aliases": ["클로즈랫풀", "클로즈그립풀다운"],
+    "bodyPart": "등",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["광배근"],
+    "secondaryMuscles": ["이두", "등 중부"],
+    "equipment": "케이블",
+    "mechanic": "compound",
+    "alternatives": ["랫풀다운", "풀업", "시티드로우"]
+  },
+  {
     "name": "시티드로우",
-    "aliases": ["seated row", "로우"],
+    "aliases": ["seated row", "로우", "케이블로우"],
     "bodyPart": "등",
     "bodyPartRegion": null,
     "primaryMuscles": ["등 중부"],
     "secondaryMuscles": ["이두", "광배근"],
     "equipment": "케이블",
     "mechanic": "compound",
-    "alternatives": ["바벨로우", "케이블로우", "원암덤벨로우"]
+    "alternatives": ["바벨로우", "원암덤벨로우", "티바로우"]
   },
   {
     "name": "바벨로우",
-    "aliases": ["barbell row"],
+    "aliases": ["barbell row", "벤트오버로우"],
     "bodyPart": "등",
     "bodyPartRegion": null,
     "primaryMuscles": ["등 중부"],
     "secondaryMuscles": ["이두", "광배근", "어깨"],
     "equipment": "바벨",
     "mechanic": "compound",
-    "alternatives": ["원암덤벨로우", "시티드로우", "케이블로우"]
+    "alternatives": ["원암덤벨로우", "시티드로우", "티바로우"]
   },
   {
     "name": "원암덤벨로우",
-    "aliases": ["원암로우"],
+    "aliases": ["원암로우", "one arm row"],
     "bodyPart": "등",
     "bodyPartRegion": null,
     "primaryMuscles": ["등 중부"],
     "secondaryMuscles": ["이두", "광배근"],
     "equipment": "덤벨",
     "mechanic": "compound",
-    "alternatives": ["바벨로우", "케이블로우", "시티드로우"]
+    "alternatives": ["바벨로우", "시티드로우", "케이블로우"]
   },
   {
     "name": "케이블로우",
@@ -231,26 +319,268 @@
     "alternatives": ["시티드로우", "바벨로우", "원암덤벨로우"]
   },
   {
+    "name": "티바로우",
+    "aliases": ["T-bar row", "티바"],
+    "bodyPart": "등",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["등 중부"],
+    "secondaryMuscles": ["이두", "광배근", "허리 하부"],
+    "equipment": "바벨",
+    "mechanic": "compound",
+    "alternatives": ["바벨로우", "원암덤벨로우", "시티드로우"]
+  },
+  {
+    "name": "인버티드로우",
+    "aliases": ["inverted row", "바디웨이트로우", "수평풀업"],
+    "bodyPart": "등",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["등 중부"],
+    "secondaryMuscles": ["이두", "광배근"],
+    "equipment": "맨몸",
+    "mechanic": "compound",
+    "alternatives": ["시티드로우", "바벨로우", "풀업"]
+  },
+  {
+    "name": "스트레이트암풀다운",
+    "aliases": ["straight arm pulldown", "스트레이트암"],
+    "bodyPart": "등",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["광배근"],
+    "secondaryMuscles": ["삼두"],
+    "equipment": "케이블",
+    "mechanic": "isolation",
+    "alternatives": ["랫풀다운", "덤벨풀오버"]
+  },
+  {
+    "name": "덤벨풀오버",
+    "aliases": ["dumbbell pullover", "풀오버"],
+    "bodyPart": "등",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["광배근"],
+    "secondaryMuscles": ["가슴", "삼두"],
+    "equipment": "덤벨",
+    "mechanic": "isolation",
+    "alternatives": ["스트레이트암풀다운", "랫풀다운"]
+  },
+  {
+    "name": "페이스풀",
+    "aliases": ["face pull"],
+    "bodyPart": "등",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["후면삼각근"],
+    "secondaryMuscles": ["등 중부", "승모근"],
+    "equipment": "케이블",
+    "mechanic": "isolation",
+    "alternatives": ["리어델트플라이", "시티드로우"]
+  },
+  {
+    "name": "슈러그",
+    "aliases": ["shrug", "바벨슈러그"],
+    "bodyPart": "등",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["승모근"],
+    "secondaryMuscles": [],
+    "equipment": "바벨",
+    "mechanic": "isolation",
+    "alternatives": ["덤벨슈러그", "페이스풀"]
+  },
+  {
+    "name": "덤벨슈러그",
+    "aliases": ["dumbbell shrug"],
+    "bodyPart": "등",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["승모근"],
+    "secondaryMuscles": [],
+    "equipment": "덤벨",
+    "mechanic": "isolation",
+    "alternatives": ["슈러그", "페이스풀"]
+  },
+  {
+    "name": "벤치프레스",
+    "aliases": ["bench press", "벤치"],
+    "bodyPart": "가슴",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["가슴"],
+    "secondaryMuscles": ["삼두", "어깨"],
+    "equipment": "바벨",
+    "mechanic": "compound",
+    "alternatives": ["덤벨벤치프레스", "덤벨플라이", "딥스"]
+  },
+  {
+    "name": "덤벨벤치프레스",
+    "aliases": ["dumbbell bench press", "덤벨벤치"],
+    "bodyPart": "가슴",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["가슴"],
+    "secondaryMuscles": ["삼두", "어깨"],
+    "equipment": "덤벨",
+    "mechanic": "compound",
+    "alternatives": ["벤치프레스", "딥스", "케이블크로스오버"]
+  },
+  {
+    "name": "인클라인벤치프레스",
+    "aliases": ["인클라인벤치", "인클라인"],
+    "bodyPart": "가슴",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["가슴 상부"],
+    "secondaryMuscles": ["삼두", "어깨"],
+    "equipment": "바벨",
+    "mechanic": "compound",
+    "alternatives": ["인클라인덤벨프레스", "케이블크로스오버", "딥스"]
+  },
+  {
+    "name": "인클라인덤벨프레스",
+    "aliases": ["인클라인덤벨"],
+    "bodyPart": "가슴",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["가슴 상부"],
+    "secondaryMuscles": ["삼두", "어깨"],
+    "equipment": "덤벨",
+    "mechanic": "compound",
+    "alternatives": ["인클라인벤치프레스", "덤벨플라이", "케이블크로스오버"]
+  },
+  {
+    "name": "디클라인벤치프레스",
+    "aliases": ["디클라인벤치", "디클라인"],
+    "bodyPart": "가슴",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["가슴 하부"],
+    "secondaryMuscles": ["삼두", "어깨"],
+    "equipment": "바벨",
+    "mechanic": "compound",
+    "alternatives": ["벤치프레스", "딥스", "덤벨플라이"]
+  },
+  {
+    "name": "스미스머신벤치프레스",
+    "aliases": ["스미스벤치"],
+    "bodyPart": "가슴",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["가슴"],
+    "secondaryMuscles": ["삼두", "어깨"],
+    "equipment": "스미스머신",
+    "mechanic": "compound",
+    "alternatives": ["벤치프레스", "덤벨벤치프레스", "케이블크로스오버"]
+  },
+  {
+    "name": "덤벨플라이",
+    "aliases": ["dumbbell fly", "플라이", "덤벨플라이"],
+    "bodyPart": "가슴",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["가슴"],
+    "secondaryMuscles": ["어깨"],
+    "equipment": "덤벨",
+    "mechanic": "isolation",
+    "alternatives": ["케이블크로스오버", "펙덱플라이", "벤치프레스"]
+  },
+  {
+    "name": "인클라인덤벨플라이",
+    "aliases": ["인클라인플라이"],
+    "bodyPart": "가슴",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["가슴 상부"],
+    "secondaryMuscles": ["어깨"],
+    "equipment": "덤벨",
+    "mechanic": "isolation",
+    "alternatives": ["덤벨플라이", "케이블크로스오버", "인클라인덤벨프레스"]
+  },
+  {
+    "name": "펙덱플라이",
+    "aliases": ["pec deck", "펙덱"],
+    "bodyPart": "가슴",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["가슴"],
+    "secondaryMuscles": ["어깨"],
+    "equipment": "기구",
+    "mechanic": "isolation",
+    "alternatives": ["덤벨플라이", "케이블크로스오버", "벤치프레스"]
+  },
+  {
+    "name": "케이블크로스오버",
+    "aliases": ["케이블크로스", "크로스오버"],
+    "bodyPart": "가슴",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["가슴"],
+    "secondaryMuscles": ["어깨"],
+    "equipment": "케이블",
+    "mechanic": "isolation",
+    "alternatives": ["덤벨플라이", "펙덱플라이", "벤치프레스"]
+  },
+  {
+    "name": "딥스",
+    "aliases": ["dips"],
+    "bodyPart": "가슴",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["가슴"],
+    "secondaryMuscles": ["삼두", "어깨"],
+    "equipment": "맨몸",
+    "mechanic": "compound",
+    "alternatives": ["벤치프레스", "케이블푸시다운", "트라이셉스익스텐션"]
+  },
+  {
+    "name": "푸쉬업",
+    "aliases": ["push up", "팔굽혀펴기"],
+    "bodyPart": "가슴",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["가슴"],
+    "secondaryMuscles": ["삼두", "어깨"],
+    "equipment": "맨몸",
+    "mechanic": "compound",
+    "alternatives": ["벤치프레스", "딥스", "덤벨플라이"]
+  },
+  {
     "name": "숄더프레스",
-    "aliases": ["shoulder press", "오버헤드프레스", "밀리터리프레스"],
+    "aliases": ["shoulder press", "오버헤드프레스", "밀리터리프레스", "OHP"],
     "bodyPart": "어깨",
     "bodyPartRegion": null,
     "primaryMuscles": ["어깨"],
     "secondaryMuscles": ["삼두"],
     "equipment": "바벨",
     "mechanic": "compound",
-    "alternatives": ["사이드레터럴레이즈", "프론트레이즈", "리어델트플라이"]
+    "alternatives": ["덤벨숄더프레스", "아놀드프레스", "사이드레터럴레이즈"]
+  },
+  {
+    "name": "덤벨숄더프레스",
+    "aliases": ["dumbbell shoulder press", "덤벨프레스"],
+    "bodyPart": "어깨",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["어깨"],
+    "secondaryMuscles": ["삼두"],
+    "equipment": "덤벨",
+    "mechanic": "compound",
+    "alternatives": ["숄더프레스", "아놀드프레스", "사이드레터럴레이즈"]
+  },
+  {
+    "name": "아놀드프레스",
+    "aliases": ["arnold press"],
+    "bodyPart": "어깨",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["어깨"],
+    "secondaryMuscles": ["삼두"],
+    "equipment": "덤벨",
+    "mechanic": "compound",
+    "alternatives": ["숄더프레스", "덤벨숄더프레스", "사이드레터럴레이즈"]
   },
   {
     "name": "사이드레터럴레이즈",
-    "aliases": ["사레레", "lateral raise", "레터럴레이즈"],
+    "aliases": ["사레레", "lateral raise", "레터럴레이즈", "사이드레이즈"],
     "bodyPart": "어깨",
     "bodyPartRegion": null,
     "primaryMuscles": ["측면삼각근"],
     "secondaryMuscles": ["어깨"],
     "equipment": "덤벨",
     "mechanic": "isolation",
-    "alternatives": ["숄더프레스", "프론트레이즈"]
+    "alternatives": ["케이블사이드레이즈", "숄더프레스", "프론트레이즈"]
+  },
+  {
+    "name": "케이블사이드레이즈",
+    "aliases": ["cable lateral raise", "케이블레터럴"],
+    "bodyPart": "어깨",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["측면삼각근"],
+    "secondaryMuscles": ["어깨"],
+    "equipment": "케이블",
+    "mechanic": "isolation",
+    "alternatives": ["사이드레터럴레이즈", "숄더프레스"]
   },
   {
     "name": "프론트레이즈",
@@ -265,14 +595,36 @@
   },
   {
     "name": "리어델트플라이",
-    "aliases": ["리어델트", "페이스풀"],
+    "aliases": ["리어델트", "rear delt fly", "벤트오버레터럴"],
     "bodyPart": "어깨",
     "bodyPartRegion": null,
     "primaryMuscles": ["후면삼각근"],
     "secondaryMuscles": ["등 중부"],
     "equipment": "덤벨",
     "mechanic": "isolation",
-    "alternatives": ["케이블로우", "시티드로우"]
+    "alternatives": ["페이스풀", "케이블리어델트플라이", "시티드로우"]
+  },
+  {
+    "name": "케이블리어델트플라이",
+    "aliases": ["케이블리어델트"],
+    "bodyPart": "어깨",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["후면삼각근"],
+    "secondaryMuscles": ["등 중부"],
+    "equipment": "케이블",
+    "mechanic": "isolation",
+    "alternatives": ["리어델트플라이", "페이스풀"]
+  },
+  {
+    "name": "업라이트로우",
+    "aliases": ["upright row"],
+    "bodyPart": "어깨",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["측면삼각근"],
+    "secondaryMuscles": ["승모근", "이두"],
+    "equipment": "바벨",
+    "mechanic": "compound",
+    "alternatives": ["사이드레터럴레이즈", "숄더프레스", "슈러그"]
   },
   {
     "name": "바이셉스컬",
@@ -283,7 +635,18 @@
     "secondaryMuscles": ["전완"],
     "equipment": "바벨",
     "mechanic": "isolation",
-    "alternatives": ["해머컬", "케이블컬"]
+    "alternatives": ["덤벨컬", "해머컬", "케이블컬"]
+  },
+  {
+    "name": "덤벨컬",
+    "aliases": ["dumbbell curl", "덤벨이두컬"],
+    "bodyPart": "팔",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["이두"],
+    "secondaryMuscles": ["전완"],
+    "equipment": "덤벨",
+    "mechanic": "isolation",
+    "alternatives": ["바이셉스컬", "해머컬", "케이블컬"]
   },
   {
     "name": "해머컬",
@@ -291,10 +654,43 @@
     "bodyPart": "팔",
     "bodyPartRegion": null,
     "primaryMuscles": ["이두"],
+    "secondaryMuscles": ["전완", "상완근"],
+    "equipment": "덤벨",
+    "mechanic": "isolation",
+    "alternatives": ["바이셉스컬", "덤벨컬", "케이블컬"]
+  },
+  {
+    "name": "인클라인덤벨컬",
+    "aliases": ["인클라인컬"],
+    "bodyPart": "팔",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["이두"],
     "secondaryMuscles": ["전완"],
     "equipment": "덤벨",
     "mechanic": "isolation",
-    "alternatives": ["바이셉스컬", "케이블컬"]
+    "alternatives": ["덤벨컬", "컨센트레이션컬", "프리처컬"]
+  },
+  {
+    "name": "컨센트레이션컬",
+    "aliases": ["concentration curl"],
+    "bodyPart": "팔",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["이두"],
+    "secondaryMuscles": [],
+    "equipment": "덤벨",
+    "mechanic": "isolation",
+    "alternatives": ["덤벨컬", "프리처컬", "케이블컬"]
+  },
+  {
+    "name": "프리처컬",
+    "aliases": ["preacher curl"],
+    "bodyPart": "팔",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["이두"],
+    "secondaryMuscles": ["전완"],
+    "equipment": "기구",
+    "mechanic": "isolation",
+    "alternatives": ["컨센트레이션컬", "덤벨컬", "케이블컬"]
   },
   {
     "name": "케이블컬",
@@ -305,33 +701,44 @@
     "secondaryMuscles": ["전완"],
     "equipment": "케이블",
     "mechanic": "isolation",
-    "alternatives": ["바이셉스컬", "해머컬"]
+    "alternatives": ["바이셉스컬", "덤벨컬", "해머컬"]
+  },
+  {
+    "name": "리버스컬",
+    "aliases": ["reverse curl"],
+    "bodyPart": "팔",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["전완"],
+    "secondaryMuscles": ["이두"],
+    "equipment": "바벨",
+    "mechanic": "isolation",
+    "alternatives": ["해머컬", "바이셉스컬"]
   },
   {
     "name": "트라이셉스익스텐션",
-    "aliases": ["skull crusher", "스컬크러셔"],
+    "aliases": ["skull crusher", "스컬크러셔", "라잉트라이셉스익스텐션"],
     "bodyPart": "팔",
     "bodyPartRegion": null,
     "primaryMuscles": ["삼두"],
     "secondaryMuscles": [],
     "equipment": "바벨",
     "mechanic": "isolation",
-    "alternatives": ["케이블푸시다운", "딥스", "오버헤드트라이셉스익스텐션"]
+    "alternatives": ["케이블푸시다운", "오버헤드트라이셉스익스텐션", "딥스"]
   },
   {
     "name": "케이블푸시다운",
-    "aliases": ["pushdown", "푸시다운", "로프푸시다운"],
+    "aliases": ["pushdown", "푸시다운", "로프푸시다운", "트라이셉스푸시다운"],
     "bodyPart": "팔",
     "bodyPartRegion": null,
     "primaryMuscles": ["삼두"],
     "secondaryMuscles": [],
     "equipment": "케이블",
     "mechanic": "isolation",
-    "alternatives": ["트라이셉스익스텐션", "딥스", "오버헤드트라이셉스익스텐션"]
+    "alternatives": ["트라이셉스익스텐션", "오버헤드트라이셉스익스텐션", "딥스"]
   },
   {
     "name": "오버헤드트라이셉스익스텐션",
-    "aliases": ["오버헤드트라이셉스"],
+    "aliases": ["오버헤드트라이셉스", "오버헤드익스텐션"],
     "bodyPart": "팔",
     "bodyPartRegion": null,
     "primaryMuscles": ["삼두"],
@@ -339,6 +746,28 @@
     "equipment": "덤벨",
     "mechanic": "isolation",
     "alternatives": ["트라이셉스익스텐션", "케이블푸시다운"]
+  },
+  {
+    "name": "클로즈그립벤치프레스",
+    "aliases": ["클로즈그립벤치", "클로즈벤치"],
+    "bodyPart": "팔",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["삼두"],
+    "secondaryMuscles": ["가슴", "어깨"],
+    "equipment": "바벨",
+    "mechanic": "compound",
+    "alternatives": ["케이블푸시다운", "트라이셉스익스텐션", "딥스"]
+  },
+  {
+    "name": "트라이셉스킥백",
+    "aliases": ["tricep kickback", "킥백"],
+    "bodyPart": "팔",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["삼두"],
+    "secondaryMuscles": [],
+    "equipment": "덤벨",
+    "mechanic": "isolation",
+    "alternatives": ["케이블푸시다운", "트라이셉스익스텐션"]
   },
   {
     "name": "플랭크",
@@ -349,7 +778,18 @@
     "secondaryMuscles": ["어깨"],
     "equipment": "맨몸",
     "mechanic": "compound",
-    "alternatives": ["크런치", "레그레이즈"]
+    "alternatives": ["사이드플랭크", "크런치", "레그레이즈"]
+  },
+  {
+    "name": "사이드플랭크",
+    "aliases": ["side plank"],
+    "bodyPart": "코어",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["옆구리"],
+    "secondaryMuscles": ["복근", "어깨"],
+    "equipment": "맨몸",
+    "mechanic": "compound",
+    "alternatives": ["플랭크", "러시안트위스트"]
   },
   {
     "name": "크런치",
@@ -360,18 +800,40 @@
     "secondaryMuscles": [],
     "equipment": "맨몸",
     "mechanic": "isolation",
-    "alternatives": ["레그레이즈", "플랭크", "케이블크런치"]
+    "alternatives": ["레그레이즈", "케이블크런치", "바이시클크런치"]
+  },
+  {
+    "name": "바이시클크런치",
+    "aliases": ["bicycle crunch", "바이시클"],
+    "bodyPart": "코어",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["복근"],
+    "secondaryMuscles": ["옆구리"],
+    "equipment": "맨몸",
+    "mechanic": "isolation",
+    "alternatives": ["크런치", "러시안트위스트", "레그레이즈"]
   },
   {
     "name": "레그레이즈",
     "aliases": ["leg raise"],
     "bodyPart": "코어",
     "bodyPartRegion": null,
-    "primaryMuscles": ["복근"],
-    "secondaryMuscles": ["하복부"],
+    "primaryMuscles": ["하복부"],
+    "secondaryMuscles": ["복근"],
     "equipment": "맨몸",
     "mechanic": "isolation",
-    "alternatives": ["크런치", "플랭크"]
+    "alternatives": ["크런치", "헝잉레그레이즈", "플랭크"]
+  },
+  {
+    "name": "헝잉레그레이즈",
+    "aliases": ["hanging leg raise", "행잉레그레이즈"],
+    "bodyPart": "코어",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["하복부"],
+    "secondaryMuscles": ["복근"],
+    "equipment": "맨몸",
+    "mechanic": "isolation",
+    "alternatives": ["레그레이즈", "크런치", "케이블크런치"]
   },
   {
     "name": "케이블크런치",
@@ -382,6 +844,83 @@
     "secondaryMuscles": [],
     "equipment": "케이블",
     "mechanic": "isolation",
-    "alternatives": ["크런치", "레그레이즈", "플랭크"]
+    "alternatives": ["크런치", "레그레이즈", "바이시클크런치"]
+  },
+  {
+    "name": "AB롤아웃",
+    "aliases": ["ab rollout", "복근롤아웃", "롤아웃"],
+    "bodyPart": "코어",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["복근"],
+    "secondaryMuscles": ["어깨", "광배근"],
+    "equipment": "기구",
+    "mechanic": "compound",
+    "alternatives": ["플랭크", "크런치", "레그레이즈"]
+  },
+  {
+    "name": "러시안트위스트",
+    "aliases": ["russian twist"],
+    "bodyPart": "코어",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["옆구리"],
+    "secondaryMuscles": ["복근"],
+    "equipment": "맨몸",
+    "mechanic": "isolation",
+    "alternatives": ["사이드플랭크", "바이시클크런치", "크런치"]
+  },
+  {
+    "name": "마운틴클라이머",
+    "aliases": ["mountain climber"],
+    "bodyPart": "코어",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["복근"],
+    "secondaryMuscles": ["어깨", "대퇴사두"],
+    "equipment": "맨몸",
+    "mechanic": "compound",
+    "alternatives": ["플랭크", "버피", "크런치"]
+  },
+  {
+    "name": "데드버그",
+    "aliases": ["dead bug"],
+    "bodyPart": "코어",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["복근"],
+    "secondaryMuscles": ["허리 하부"],
+    "equipment": "맨몸",
+    "mechanic": "isolation",
+    "alternatives": ["플랭크", "크런치", "레그레이즈"]
+  },
+  {
+    "name": "케틀벨스윙",
+    "aliases": ["kettlebell swing", "케틀벨"],
+    "bodyPart": "전신",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["둔근", "햄스트링"],
+    "secondaryMuscles": ["허리 하부", "어깨", "복근"],
+    "equipment": "케틀벨",
+    "mechanic": "compound",
+    "alternatives": ["힙쓰러스트", "데드리프트", "버피"]
+  },
+  {
+    "name": "버피",
+    "aliases": ["burpee"],
+    "bodyPart": "전신",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["가슴", "대퇴사두"],
+    "secondaryMuscles": ["둔근", "어깨", "복근", "삼두"],
+    "equipment": "맨몸",
+    "mechanic": "compound",
+    "alternatives": ["마운틴클라이머", "박스점프", "케틀벨스윙"]
+  },
+  {
+    "name": "박스점프",
+    "aliases": ["box jump"],
+    "bodyPart": "전신",
+    "bodyPartRegion": null,
+    "primaryMuscles": ["대퇴사두", "둔근"],
+    "secondaryMuscles": ["햄스트링", "종아리"],
+    "equipment": "맨몸",
+    "mechanic": "compound",
+    "alternatives": ["버피", "스쿼트", "레그프레스"]
   }
 ]
